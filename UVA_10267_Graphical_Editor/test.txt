@@ -1,0 +1,77 @@
+I 5 6
+L 2 3 A
+S one.bmp
+G 2 3 J
+F 3 3 J
+V 2 3 4 W
+H 3 4 2 Z
+S two.bmp
+I 10 15
+JUNK - SHOULD BE IGNORED
+
+# Check size is correctly changed
+I 4 4
+# Set boundary pixels
+L 1 1 A
+L 4 1 B
+L 4 4 C
+L 1 4 D
+S three.bmp
+C
+S three.bmp
+S three.bmp
+I 10 10
+H 2 6 3 H
+H 1 10 1 H
+H 1 10 10 H
+V 1 1 10 V
+V 3 2 6 V
+# Fill in a single square sized region
+F 2 2 F
+# Fill that region with its own colour
+F 2 2 F
+S four.bmp
+# Misc fill - all directions
+F 7 7 F
+S four.bmp
+# Fill next to fill
+F 10 1 F
+S four.bmp
+K 2 2 9 9 R
+S five.bmp
+C
+S five.bmp
+K 1 1 1 1 K
+K 2 3 2 9 K
+K 4 3 8 3 K
+K 4 4 9 9 M
+K 1 2 10 2 M
+S six.bmp
+F 8 8 F
+S seven.bmp
+C
+# parsing test - params separated by spaces. Doesn't specify how many!
+S seven.bmp
+I   8   7
+F    4    5     F
+S    blah.bmp
+# Performance Test - Don't understand how this is really quick on my PC
+# but got Time limit exceeded on the judge? Only 5 s allowed
+I 250 250
+F 1 1 F
+#S   big.bmp
+# Ahh - I see! Filling from the middle or bottom is way too slow.
+# No - actually I was stuck in a loop when filling the same colour.
+# Annoying, 'cos I really did test that, although clearly not well enough!
+F 125 125 G
+F 250 250 G
+F 1 1 G
+F 200 200 G
+#S big.bmp
+# Bug I found whereby H and V params are allowed to specify in reverse.
+# Sneaky, 'cos I know rect isn't allowed to do that
+I 15 15
+H 10 1 5 H
+V 3 10 1 V
+S bmp.bmp
+X
