@@ -1,0 +1,48 @@
+6
+
+299
+492
+495
+399
+492
+495
+399
+283
+279
+689
+078
+100
+000
+000
+000 # Correct answer == 16
+
+100 # Correct answer == 1
+
+100 # Correct answer == 1
+
+201 # Set r0 to 1
+219 # Set r1 to 9
+010 # Goto loc 9
+200 # Set r0 to 0
+200 # Waste some time
+200 # so we know if we're wrong
+200
+200
+200
+100 # Correct answer == 4
+
+259 # Set r5 to 9
+359 # Add 9 to r5
+458 # Multiply r5 by 8 (s/b 144)
+565 # Set r6 to r5 (s/b 144)
+656 # Add r6 to r5 (s/b 288)
+755 # Square r5 (s/b 82944 => 944)
+956 # Set 944 in memory to val of r6 (s/b 144)
+876 # Set r7 to val in ram specified by r5 (s/b 944-> value 144)
+100
+
+222 # Set r2 to 2  # Test out looping
+239 # Set r3 to 9
+331 # Add 1 to r3
+023 # Branch to address in r2 (==2) unless r3==0
+100 # Correct answer == 1985
