@@ -43,6 +43,7 @@ Solution Write-up [here](http://www.adriandale.co.uk/index.php/2011/11/07/progra
 [UVA-706-LCD-Display](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=647) - Status: Accepted  
 Solution write-up [here](http://www.adriandale.co.uk/index.php/2011/11/08/programming-challenges-4-6/)
 
+[UVA-811-The-Fortified-Forest](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=752) - Status: Accepted
 
 Building
 --------
