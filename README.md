@@ -45,6 +45,10 @@ Solution write-up [here](http://www.adriandale.co.uk/index.php/2011/11/08/progra
 
 [UVA-811-The-Fortified-Forest](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=752) - Status: Accepted
 
+[UVA-10651-Pebble-Solitaire](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&category=&problem=1592) - Status: Accepted
+
+[UVA-11391-Blobs-in-the-Board](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2386) - Status: Accepted
+
 Building
 --------
 
